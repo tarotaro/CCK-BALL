@@ -63,7 +63,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&scroll_horizontal_encoder>,
                 <&scroll_vertical_encoder>;
         };
 
@@ -76,7 +76,9 @@
 &trans   &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans     &trans            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&scroll_horizontal_encoder>,
+                <&scroll_vertical_encoder>;
         };
 
         BT_layers {
@@ -88,7 +90,9 @@
 &trans  &trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&scroll_horizontal_encoder>,
+                <&scroll_vertical_encoder>;
         };
 
         scroll-layers {
@@ -114,7 +118,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,
+                // 编码器1：上下滚动,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
